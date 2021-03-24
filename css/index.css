@@ -1,0 +1,249 @@
+
+body {
+  font-family: DM Sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1E0E62;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.dev {
+  background: #ccc;
+  min-height: 10000px;
+}
+
+/* Container */
+.container {
+  position: relative;
+}
+
+::-moz-selection {
+  background: #dec82c;
+  color: #ffffff;
+}
+
+::-webkit-selection {
+  background: #DEC82C;
+  color: #ffffff;
+}
+
+::selection {
+  background: #DEC82C;
+  color: #ffffff;
+}
+
+/* Navigation */
+nav, header, section, footer {
+  position: relative;
+}
+
+div.navBarRow {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+a.navBarItem {
+  padding-right: 0.5em;
+  color: #737a70;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+a.navBarItem:hover {
+  color: #ffffff;
+
+}
+
+header, section, [data-bg-src], [data-bg-src-2x] {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+header, section {
+  overflow: hidden;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+}
+
+nav.transparent {
+  background: transparent;
+}
+
+nav.menubar {
+  padding: 10px 0px 10px 0px;
+  background-color: #C9CABB
+}
+
+div.bookIntro {
+  padding-top: 1em;
+}
+
+div.bookImage {
+  align-items: center;
+}
+
+/* Padding Controls */
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+/* Margin Controls */
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+/* Width Controls */
+.w-full {
+  width: 100%;
+}
+
+/* Fonts */
+.f-16 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.f-18 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.f-20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.color-heading {
+  color: #4c5a6b;
+}
+
+/* Links */
+a, button {
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+a:hover, button:hover {
+  text-decoration: none;
+}
+
+a:active, a:focus, button:active, button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  border: none;
+  outline: none !important;
+}
+
+.btn.action-1 {
+  background-color: #c9cabb;
+  color: #ffffff;
+}
+
+.btn.action-1:hover {
+  background-color: #AEB0A6;
+}
+
+.btn.sm {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+.btn.sm[class^=border-], .btn.sm[class*=" border-"] {
+  line-height: 36px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 0;
+  font-weight: 700;
+  font-family: DM Sans, Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-size: 58px;
+  line-height: 70px;
+}
+
+h1.big, h2.big {
+  font-size: 72px;
+  line-height: 86px;
+}
+
+h1.small, h2.small {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 42px;
+  line-height: 52px;
+}
+
+/* Colors */
+.bookColor {
+  color: #c9cabb;
+}
+
+.bookColorDark {
+  color: #737a70;
+}
+
+.bookBackgroundColor {
+  background-color: #c9cabb;
+}
+
+.bookBackgroundColorDark {
+  background-color: #737a70;
+}
+
+/* AOS plugin */
+/* Change AOS plugin default settings */
+[data-aos=fade-down] {
+  transform: translate3d(0, -35px, 0);
+}
+
+[data-aos=fade-up] {
+  transform: translate3d(0, 35px, 0);
+}
+
+/* Input Labels */
+label.requiredField::after {
+  content: " *";
+  color: red;
+}
