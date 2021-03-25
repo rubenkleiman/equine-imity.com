@@ -53,7 +53,7 @@ a.navBarItem {
 
 a.navBarItem:hover {
   color: #ffffff;
-
+display: inline-block;
 }
 
 header, section, [data-bg-src], [data-bg-src-2x] {
