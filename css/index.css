@@ -53,7 +53,7 @@ a.navBarItem {
 
 a.navBarItem:hover {
   color: #ffffff;
-display: inline-block;
+  display: inline-block;
 }
 
 header, section, [data-bg-src], [data-bg-src-2x] {
@@ -98,12 +98,15 @@ div.bookImage {
 .pt-100 {
   padding-top: 100px;
 }
+
 .pt-105 {
   padding-top: 105px;
 }
+
 .pt-50 {
   padding-top: 50px;
 }
+
 .pb-45 {
   padding-bottom: 45px;
 }
@@ -129,9 +132,11 @@ div.bookImage {
 .mr-15 {
   margin-right: 15px;
 }
+
 .mb-45 {
   margin-bottom: 45px;
 }
+
 .mb-50 {
   margin-bottom: 50px;
 }
@@ -766,7 +771,6 @@ div.bookImage {
 }
 
 
-
 .color-heading {
   color: #4c5a6b;
 }
@@ -779,6 +783,18 @@ a, button {
 
 a:hover, button:hover {
   text-decoration: none;
+}
+
+a.link {
+  padding-right: 0.5em;
+  color: #737a70;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+a.link:hover {
+  color: #3e62ca;
 }
 
 a:active, a:focus, button:active, button:focus {
@@ -804,6 +820,7 @@ button {
 .action-3 {
   color: #E93A7D;
 }
+
 .action-3.link:hover {
   color: #d81862;
 }
