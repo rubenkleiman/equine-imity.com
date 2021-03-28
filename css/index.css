@@ -94,6 +94,11 @@ div.bookImage {
   align-items: center;
 }
 
+/* Special Positions */
+.bookTitle {
+  display: inline-block;
+}
+
 /* Paddings */
 .pt-100 {
   padding-top: 100px;
@@ -785,15 +790,15 @@ a:hover, button:hover {
   text-decoration: none;
 }
 
-a.link {
+a.genericLink {
   padding-right: 0.5em;
   color: #737a70;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   margin-right: 0.5em;
 }
 
-a.link:hover {
+a.genericLink:hover {
   color: #3e62ca;
 }
 
@@ -868,6 +873,10 @@ h3 {
 /* Colors */
 .bg-light {
   background-color: #ffffff !important;
+}
+
+.darkGreenColor {
+  color: #82b163;
 }
 
 .bookAltColor {

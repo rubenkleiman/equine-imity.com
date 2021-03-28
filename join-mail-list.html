@@ -21,6 +21,18 @@
   <link rel="stylesheet" href="css/index.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- page-specific-->
+  <style type="text/css">
+    #mc_embed_signup {
+      background: #fff;
+      clear: left;
+      font: 14px Helvetica, Arial, sans-serif;
+    }
+
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
 </head>
 <body>
 
@@ -29,23 +41,24 @@
     <div class="row navBarRow">
       <div class="mb-20 mb-lg-0 col-lg-1 text-lg-left">
         <a href="/" class="link img_link">
-          <img src="media/i/equine-imity-logo.png" alt="Logo" class="img-fluid" data-aos="fade-down" data-aos-delay="250">
+          <img src="media/i/equine-imity-logo.png" alt="Logo" class="img-fluid" data-aos="fade-down"
+               data-aos-delay="250">
         </a>
       </div>
       <div class="col-lg-8" data-aos="fade-down" data-aos-delay="0">
-        <!--        <a href="#" class="navBarItem">-->
-        <!--          Book Reviews-->
-        <!--        </a>-->
+        <a href="http://www.horsensei.com/#app=programs_somatic_horsemanship" class="navBarItem">
+          Experience Equine-imity
+        </a>
         <a href="http://horsensei.com" class="navBarItem">
-          Horsensei Website
+          Horsensei.com
         </a>
         <a href="http://www.horsensei.com/#app=programs"
            class="navBarItem">
           Programs
         </a>
-        <!--        <a href="#" class="navBarItem">-->
-        <!--          Buy-->
-        <!--        </a>-->
+        <a href="/contact.html" class="navBarItem">
+          Contact
+        </a>
         <a class="navBarItem" href="/join-mail-list.html">
           Join Our Mail List
         </a>
@@ -55,41 +68,29 @@
 </nav>
 
 <section>
-  <div class="container">
-    <div class="f-18 bookColorDark" style="margin-top: 1em;">JOIN OUR MAILING LIST</div>
-    <p class="bookColorDark">Horsensei sends out occasional mailings. We promise not to spam you. You can unsubscribe
-      at
-      any time.</p>
-
+  <div class="container bookColorDark">
+    <h1 class="f-18 mt-20" >JOIN OUR MAILING LIST</h1>
+    <p class="mt-20">Horsensei sends out occasional mailings. We promise not to spam you. You can unsubscribe
+      at any time.</p>
     <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-      }
-
-      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
     <div id="mc_embed_signup">
       <form
         action="https://horsensei.us18.list-manage.com/subscribe/post?u=821bd578751eadb89a9b16cdc&amp;id=da445b0497"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
         target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll" class="bookColorDark">
+        <div id="mc_embed_signup_scroll">
           <div class="mc-field-group">
             <label class="requiredField" for="mce-EMAIL">Email Address</label>
             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
           </div>
           <div class="mc-field-group ">
             <label class="requiredField" for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
           </div>
           <div class="mc-field-group">
             <label class="requiredField" for="mce-LNAME">Last Name </label>
-            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
           </div>
 
           <!--
@@ -116,7 +117,7 @@
         </div>
       </form>
     </div>
-<!--    <div class="small" style="padding-top: 2em;"><a menuid="contactus" href="?f=privacy">Privacy Policy</a></div>-->
+    <!--    <div class="small" style="padding-top: 2em;"><a menuid="contactus" href="?f=privacy">Privacy Policy</a></div>-->
   </div>
   </div>
 </section>
