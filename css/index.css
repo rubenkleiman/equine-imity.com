@@ -129,6 +129,9 @@ div.bookImage {
 .mt-20 {
   margin-top: 20px;
 }
+.mt-30 {
+  margin-top: 30px;
+}
 
 .mb-20 {
   margin-bottom: 20px;
@@ -798,12 +801,17 @@ a:hover, button:hover {
   text-decoration: none;
 }
 
+/* Add external link icon when target is _blank */
+/*a[target="_blank"]:after {*/
+/*  content: " (external)";*/
+/*}*/
+
 a.genericLink {
-  padding-right: 0.5em;
+  /*padding-right: 0.5em;*/
   color: #737a70;
   text-decoration: underline;
   display: inline-block;
-  margin-right: 0.5em;
+  /*margin-right: 0.5em;*/
 }
 
 a.genericLink:hover {
@@ -881,6 +889,10 @@ h3 {
 /* Colors */
 .bg-light {
   background-color: #ffffff !important;
+}
+
+.sageGreenBackground {
+  background-color: #9CAF88;
 }
 
 .darkGreenColor {
