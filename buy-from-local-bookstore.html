@@ -94,7 +94,7 @@
     if (e && e.keyCode != 13) {
       return
     }
-    const zip = document.getElementsByName('zip')[0];
+    let zip = document.getElementsByName('zip')[0];
     if (/^\d{5}(-\d{4})?$/.test(zip.value)) {
       window.open(`https://www.google.com/search?q=${zip.value}+bookstores&oq=${zip.value}+bookstores`).focus()
     } else {
