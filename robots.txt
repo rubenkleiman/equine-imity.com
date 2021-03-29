@@ -1,6 +1,6 @@
 # www.robotstxt.org/
 
 User-agent: *
-Disallow: /
+Allow:
 
 Sitemap: http://www.equine-imity.com/sitemap.xml
