@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<nav class= "menubar sticky-top">
+<nav class="menubar sticky-top">
   <div class="container">
     <div class="row navBarRow">
       <div class="mb-20 mb-lg-0 col-lg-1 text-lg-left">
@@ -53,10 +53,6 @@
   </div>
 </nav>
 
-<div id="msg" style="visibility: hidden" class="alert alert-danger alert-dismissible fade show" role="alert">
-  <strong>Invalid Zip Code.</strong> Please enter a valid US Zip Code.
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
 
 <section class="mb-20">
   <div class="container">
@@ -65,7 +61,8 @@
     </div>
     <div class="row justify-content-center mt-20 bookColorDark">
       <div class="col-8" style="text-align: justify">
-        <h1 style="font-size: 1em">Please consider buying <i>Equine-imity</i> from your local independent bookseller.</h1>
+        <h1 style="font-size: 1em">Please consider buying <i>Equine-imity</i> from your local independent bookseller.
+        </h1>
         Bricks-and-mortar bookstores have suffered a double whammy. Many went out of business when Amazon came online.
         Many more closed when the covid pandemic prevented in-person shopping.
         You can buy <i>Equine-imity</i> locally by going in person, when safe, by calling, or by
@@ -76,9 +73,20 @@
     <div class="row justify-content-center mt-20">
       <div class="col-7 bookColorDark" style="text-align: center">
         <input name="zip" value="" placeholder="Enter Your Zip Code" onkeyup="search(event)"/>
-        <button id="search" type="button" onclick="search()" class="btn btn-secondary sageGreenBackground">Find My Bookstores</button>
+        <button id="search" type="button" onclick="search()" class="btn btn-secondary sageGreenBackground">Find My
+          Bookstores
+        </button>
       </div>
     </div>
+    <div id="msg" style="visibility: hidden"
+         class="row justify-content-center alert alert-danger alert-dismissible fade show mt-4" role="alert">
+      <div class="">
+        <strong>Invalid Zip Code.</strong> Please enter a valid US Zip Code.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
   </div>
 </section>
 
@@ -98,8 +106,11 @@
     if (/^\d{5}(-\d{4})?$/.test(zip.value)) {
       window.open(`https://www.google.com/search?q=${zip.value}+bookstores&oq=${zip.value}+bookstores`).focus()
     } else {
-      let alert = document.getElementById('msg')
-      alert.style.visibility = 'visible'
+      let msg = document.getElementById('msg')
+      msg.style.visibility = 'visible'
+      setTimeout(() => {
+        msg.style.visibility = 'hidden'
+      }, 6000)
     }
   }
 </script>

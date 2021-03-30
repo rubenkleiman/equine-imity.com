@@ -807,6 +807,15 @@ a.greenToBrownLink:hover {
   color: #7D5941;
 }
 
+a.normalToBrownLink {
+  text-decoration: none;
+  color: #4c5a6b;
+}
+
+a.normalToBrownLink:hover {
+  color: #7D5941;
+}
+
 /* Add external link icon when target is _blank */
 /*a[target="_blank"]:after {*/
 /*  content: " (external)";*/
