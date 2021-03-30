@@ -813,6 +813,7 @@ a.normalToBrownLink {
 }
 
 a.normalToBrownLink:hover {
+  text-decoration: none;
   color: #7D5941;
 }
 
