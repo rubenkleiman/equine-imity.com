@@ -81,6 +81,16 @@ nav.menubar {
   background-color: #C9CABB
 }
 
+/* footers */
+
+.footer-title {
+  color: #4c5d3b;
+  font-weight: bold;
+  font-size: 1.5em
+}
+
+/* divs */
+
 div.bookIntro {
   padding-top: 1em;
 }
@@ -167,6 +177,10 @@ div.bookImage {
 }
 
 /* Fonts */
+
+small {
+  font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
 
 .f-12 {
   font-size: 12px;
@@ -817,20 +831,24 @@ a.normalToBrownLink:hover {
   color: #7D5941;
 }
 
-/* Add external link icon when target is _blank */
-/*a[target="_blank"]:after {*/
-/*  content: " (external)";*/
-/*}*/
-
 a.genericLink {
-  /*padding-right: 0.5em;*/
   color: #737a70;
   text-decoration: underline;
   display: inline-block;
-  /*margin-right: 0.5em;*/
 }
 
 a.genericLink:hover {
+  color: #7D5941;
+}
+
+
+a.genericLinkNoUnderline {
+  color: #737a70;
+  text-decoration: none;
+  /*display: inline-block;*/
+}
+
+a.genericLinkNoUnderline:hover {
   color: #7D5941;
 }
 
