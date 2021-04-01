@@ -40,6 +40,23 @@
   js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Load Twitter SDK -->
+<script>window.twttr = (function (d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function (f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 <nav class="menubar sticky-top">
   <div class="container">
@@ -145,27 +162,24 @@
         </div>
 
         <!-- Sharing -->
-        <div style="margin-top: 0.5em">
-          <style type="text/css" media="screen">
-            #custom-tweet-button a {
-              /*display: block;*/
-              padding: 2px 5px 2px 20px;
-              margin-right: 0.5em;
-              background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
-              /*border: 1px solid #ccc;*/
-            }
-          </style>
-
-          <span id="custom-tweet-button">
-            <a href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button"
-               target="_blank"></a>
-          </span>
-          <span style="margin-left: 1em;" class="fb-share-button"
-                data-href="https://equine-imity.com"
-                data-layout="button">
+        <div class="row">
+          <div class="col-2">
+            <span class="container">
+              <a class="twitter-share-button"
+                 href="https://twitter.com/intent/tweet?text=Hello%20world"
+                 data-size="large">
+              Tweet
+              </a>
             </span>
+          </div>
+          <div class="col-2">
+            <span style="margin-left: 1em;" class="fb-share-button"
+                  data-href="https://twitter.com/share?url=http://www.equine-imity.com/index.html&text='This is the Equine-imity book home page."
+                  data-size="large"
+                  data-layout="button">
+            </span>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
