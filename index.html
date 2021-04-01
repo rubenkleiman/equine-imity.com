@@ -32,14 +32,19 @@
 
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
-<script>(function (d, s, id) {
-  let js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0"
+        nonce="GZMs5NhS">
+</script>
+<!--<div id="fb-root"></div>-->
+<!--<script>(function (d, s, id) {-->
+<!--  let js, fjs = d.getElementsByTagName(s)[0];-->
+<!--  if (d.getElementById(id)) return;-->
+<!--  js = d.createElement(s);-->
+<!--  js.id = id;-->
+<!--  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";-->
+<!--  fjs.parentNode.insertBefore(js, fjs);-->
+<!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
 <!-- Load Twitter SDK -->
 <script>window.twttr = (function (d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
@@ -166,18 +171,22 @@
           <div class="col-4">
             <span class="container">
               <a class="twitter-share-button"
-                 href="https://twitter.com/intent/tweet?url=http://www.equine-imity.com/index.html&text='Take a look at the home page of the Equine-imity book by Beverley Kane."
+                 href="https://twitter.com/intent/tweet?url=http://www.equine-imity.com/index.html&text=Take a look at the home page of the Equine-imity book by Beverley Kane."
                  data-size="large">
               Tweet
               </a>
             </span>
           </div>
           <div class="col-8">
-          <span style="margin-left: 1em;" class="fb-share-button"
-                data-size="large"
-                data-href="https://equine-imity.com"
-                data-layout="button">
-            </span>
+            <span class="fb-share-button" data-href="http://www.equine-imity.com/index.html" data-layout="button"
+                  data-size="large"><a target="_blank"
+                                       href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.equine-imity.com%2Findex.html&amp;src=sdkpreparse"
+                                       class="fb-xfbml-parse-ignore">Share</a></span>
+            <!--          <span style="margin-left: 1em;" class="fb-share-button"-->
+            <!--                data-size="large"-->
+            <!--                data-href="https://equine-imity.com"-->
+            <!--                data-layout="button">-->
+            <!--            </span>-->
           </div>
         </div>
       </div>
