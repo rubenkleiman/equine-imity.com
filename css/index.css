@@ -38,17 +38,12 @@ div.navBarRow {
   line-height: 28px;
 }
 
-a.navBarItem {
-  padding-right: 0.5em;
-  color: #737a70;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 0.5em;
+nav a:hover{
+  color: white !important;
 }
-
-a.navBarItem:hover {
-  color: #ffffff;
-  display: inline-block;
+nav li {
+  padding-right:1em !important;
+  padding-left:1em !important;
 }
 
 header, section, [data-bg-src], [data-bg-src-2x] {
@@ -78,7 +73,7 @@ nav.transparent {
 
 nav.menubar {
   padding: 10px 0 10px 0;
-  background-color: #C9CABB
+  background-color: #c9cabb
 }
 
 /* footers */
